@@ -7,6 +7,8 @@ class Game:
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH,HEIGHT))
         self.clock = pygame.time.Clock()
+        pygame.display.set_caption('Xerdo')
+        pygame.display.set_icon(pygame.image.load('graphics/XCON.png').convert_alpha())
 
     def run(self):
         while True:
